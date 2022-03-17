@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Borka Roland">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tech_style.css">
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+    <nav>
+        <div id="nav-left">
+        <img src="logo.svg" alt="logo">
+        </div>
+        <div id="dec-line">
+        </div>
+        <a class="icon" onclick="mMenu()">
+          <img src="icon-hamburger.svg" alt="menu">
+        </a>
+        <div id="nav-right">
+          <a class="xButton" onclick="mMenu()">
+            <img src="icon-close.svg" alt="close">
+          </a>
+          <ul>
+            <a href="index.html"><li><span class="nSpan">00</span> Home</li></a>
+            <a href="destination.html"><li><span class="nSpan">01</span> Destination</li></a>
+            <a href="crew.html"><li><span class="nSpan">02</span> Crew</li></a>
+            <a class="active" href="#"><li><span class="nSpan">03</span> Technology</li></a>
+          </ul>
+          
+        </div>
+      </nav>
+    <h5 id="techH5"><span>03</span> SPACE LAUNCH 101 </h5>
+    <div id="content">
+        
+        <div id="left-side">
+            
+            <div id="tech-side">
+                <div id="left-a">
+                    <button id="first" onclick="lunchV()" >1</button>
+                    <button id="second" onclick="spacePort()" >2</button>
+                    <button id="third" onclick="spaceCapsule()" >3</button>
+                </div>
+                <div id="left-content">
+
+                    <p id="textTech">THE TERMINOLOGY…</p>
+                    <h3 id="name">launch vehicle</h3>
+                    <p id="techP"> A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+                        payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier
+                        rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring
+                        sight on the launch pad!</p>
+                </div>
+            </div>
+        </div>
+        <div id="right-side">
+            <div id="right-content">
+                <div id="techImg">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="tech_script.js"></script>
+    <script src="control.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+#content{
+    margin-top:-5%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#right-side{
+    margin-top: 0;
+}
+#left-content{
+    width: 650px;
+    margin-top: 25%;
+}
+#astoImg{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* #right-content img{
+ width: 90%;
+ margin-bottom: -4px;
+} */
+body{
+    background-image: url(background-crew-desktop.jpg);
+}
+#crewH5{
+    color: white;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: left;
+}
+h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+h4{
+    margin-top: 20%;
+    color: grey;
+}
+p{
+    color: #d0d6f9;
+}
+button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-right: 20px;
+    border: none;
+    background-color: gray;
+    
+}
+button:hover{
+    background-color: white;
+}
+.selected{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-right: 20px;
+    border: none;
+    background-color: white;
+}
+@media screen and (max-width: 800px){
+    body{
+        background-image: url(background-crew-tablet.jpg);
+    }
+    #crewH5{
+        text-align: left;
+        padding-top: 30px;
+    }
+    h4{
+        margin-top: 10%;
+    }
+    #right-content img{
+        width: 80%;
+    }
+    #dot-btn{
+        margin-bottom: 5%;
+    }
+    #left-content {
+        margin-top: 5%;
+    }
+    #right-content{
+        margin-top: 10%;
+    }
+    #right-side{
+        margin-top: -5%;
+        margin-bottom: 0;
+        
+    }
+}
+@media screen and (max-width: 430px){
+    body{
+        background-image: url(background-crew-mobile.jpg);
+    }
+    #crewH5{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    #right-side{
+        order: 1;
+        margin-top: -5%;
+    }
+    #dot-btn{
+        order: 1;
+        z-index: 2;
+    }
+    #role{
+        order: 2;
+        margin-top: 5%;
+    }
+    #name{
+        order: 3;
+    }
+    #astroP{
+        order: 4;
+        margin-bottom: 5%;
+    }
+    #left-side{
+        order: 2;
+    }
+    #left-content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    #astroImg{
+        border-bottom: 1px solid gray;
+    }
+    #right-content img{
+        width: 60%;
+    }
+   
+}

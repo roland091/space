@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Borka Roland">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="deststyle.css">
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+    <nav>
+        <div id="nav-left">
+        <img src="logo.svg" alt="logo">
+        </div>
+        <div id="dec-line">
+        </div>
+        <a class="icon" onclick="mMenu()">
+          <img src="icon-hamburger.svg" alt="menu">
+        </a>
+        <div id="nav-right">
+          <a onclick="mMenu()" class="xButton">
+            <img src="icon-close.svg" alt="close">
+          </a>
+          <ul>
+            <a href="index.html"><li><span class="nSpan">00</span> Home</li></a>
+            <a class="active" href="#"><li><span class="nSpan">01</span> Destination</li></a>
+            <a href="crew.html"><li><span class="nSpan">02</span> Crew</li></a>
+            <a href="technology.html"><li><span class="nSpan">03</span> Technology</li></a>
+          </ul>
+          
+        </div>
+      </nav>
+    <div id="content">
+        <div id="left-side">
+            <div id="left-content">
+                <h5 id="destH5"><span>01</span> Pick your destination</h5>
+                <div id="destImg">
+                    <img src="image-moon.png" alt="moon">
+                </div>
+            </div>
+        </div>
+        <div id="right-side">
+            <div id="right-content">
+                <ul>
+                    <a id="moon" onclick="moon()">
+                        <li>Moon</li>
+                    </a>
+                    <a id="mars" onclick="mars()">
+                        <li>Mars</li>
+                    </a>
+                    <a id="europa" onclick="europa()">
+                        <li>Europa</li>
+                    </a>
+                    <a id="titan" onclick="titan()">
+                        <li>Titan</li>
+                    </a>
+                </ul>
+                <h2 id="destTitle">Moon</h2>
+                <p id="destP">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                    perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2
+                    and Apollo 11 landing sites.</p>
+                <table>
+                    <tr>
+                        <td>Avg. distance</td>
+                        <td>Est. travel time</td>
+                    </tr>
+                    <tr>
+                        <td id="destDist">384,400 km</td>
+                        <td id="destDay">3 days</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="dest_script.js"></script>
+    <script src="control.js"></script>
+</body>
+
+</html>
